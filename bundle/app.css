@@ -548,7 +548,7 @@ a:hover {
           align-items: center;
 }
 .section .links a{
-  padding: 1.5em;
+  padding: 1.3em;
 }
 .iphone-demo {
   -webkit-box-flex: 1;
@@ -561,7 +561,12 @@ a:hover {
   -webkit-align-self: stretch;
       -ms-flex-item-align: stretch;
           align-self: stretch;
-  background-color: rgba(255,0,0,0.3);
+  /*background-color: rgba(255,0,0,0.3);*/
+  padding: 3em;
+}
+.iphone-demo img{
+  height: 632px;
+  width: 300px;
 }
 .feature-description {
   -webkit-box-flex: 1;
@@ -574,5 +579,6 @@ a:hover {
   -webkit-align-self: stretch;
       -ms-flex-item-align: stretch;
           align-self: stretch;
-  background-color: rgba(0,255,0,0.3);
+  /*background-color: rgba(0,255,0,0.3);*/
+  padding: 4em;
 }
