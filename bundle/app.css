@@ -464,8 +464,8 @@ body {
   background-color: #1F1E34;
   color: #FFF;
   font-family: "Avenir Next",
-      "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
-      Arial, "Lucida Grande", sans-serif;
+  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
+  Arial, "Lucida Grande", sans-serif;
   font-weight: 100;
 }
 
@@ -494,13 +494,30 @@ a:hover {
   text-decoration: none;
 }
 .section {
-  height: 100%;
-  width: 100%;
   border: 2px solid #FFF;
+  height: 100vh;
+  width: 100wh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+.row{
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+      -ms-flex-align:center;
+          align-items:center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.column{
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -510,6 +527,10 @@ a:hover {
   -webkit-align-items:center;
       -ms-flex-align:center;
           align-items:center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .section .links{
   display: -webkit-box;
@@ -526,7 +547,32 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .section .links a{
-  margin-left: 46px;
+  padding: 1.5em;
+}
+.iphone-demo {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  background-color: rgba(255,0,0,0.3);
+}
+.feature-description {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  background-color: rgba(0,255,0,0.3);
 }

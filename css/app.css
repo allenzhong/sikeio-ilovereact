@@ -24,8 +24,8 @@ body {
   background-color: #1F1E34;
   color: #FFF;
   font-family: "Avenir Next",
-      "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
-      Arial, "Lucida Grande", sans-serif;
+  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
+  Arial, "Lucida Grande", sans-serif;
   font-weight: 100;
 }
 
@@ -54,19 +54,38 @@ a:hover {
   text-decoration: none;
 }
 .section {
-  height: 100%;
-  width: 100%;
   border: 2px solid #FFF;
+  height: 100vh;
+  width: 100wh;
   display: flex;
+}
+.row{
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+}
+.column{
   flex-direction: column;
   align-items:center;
+  justify-content: center;
 }
 .section .links{
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
 .section .links a{
-  margin-left: 46px;
+  padding: 1.5em;
+}
+.iphone-demo {
+  flex-grow: 1;
+  flex-basis: 0;
+  align-self: stretch;
+  background-color: rgba(255,0,0,0.3);
+}
+.feature-description {
+  flex-grow: 1;
+  flex-basis: 0;
+  align-self: stretch;
+  background-color: rgba(0,255,0,0.3);
 }
