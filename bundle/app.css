@@ -501,6 +501,7 @@ a:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 .row{
   -webkit-box-orient: horizontal;
@@ -564,9 +565,12 @@ a:hover {
   /*background-color: rgba(255,0,0,0.3);*/
   padding: 3em;
 }
-.iphone-demo img{
-  height: 632px;
-  width: 300px;
+.iphone-demo .iphone-img{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
 }
 .feature-description {
   -webkit-box-flex: 1;
@@ -581,4 +585,11 @@ a:hover {
           align-self: stretch;
   /*background-color: rgba(0,255,0,0.3);*/
   padding: 4em;
+}
+.android-img{
+  position: absolute;
+  top:100%;
+  left:100%;
+  -webkit-transform: translate(-50%,-50%) rotate(-45deg) ;
+          transform: translate(-50%,-50%) rotate(-45deg) ;
 }
