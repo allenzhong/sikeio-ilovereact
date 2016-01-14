@@ -450,7 +450,7 @@ body, div, span {
       -ms-flex-line-pack: start;
           align-content: flex-start;
 
-  border: 0 solid black;
+  /*border: 0 solid black;*/
   margin: 0;
   padding: 0;
 }
@@ -494,7 +494,7 @@ a:hover {
   text-decoration: none;
 }
 .section {
-  border: 2px solid #FFF;
+  /*border: 2px solid #FFF;*/
   height: 100vh;
   width: 100wh;
   display: -webkit-box;
