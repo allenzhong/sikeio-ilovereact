@@ -10,7 +10,7 @@ body, div, span {
   flex-shrink: 0;
   align-content: flex-start;
 
-  /*border: 0 solid black;*/
+  border: 0 solid black;
   margin: 0;
   padding: 0;
 }
@@ -109,7 +109,7 @@ a:hover {
   flex-basis: 0;
   align-self: stretch;
   /*background-color: rgba(255,0,0,0.3);*/
-  padding: 3em;
+  padding: 50px;
 }
 .iphone-demo .iphone-img{
   top: 50%;
@@ -122,7 +122,7 @@ a:hover {
   flex-basis: 0;
   align-self: stretch;
   /*background-color: rgba(0,255,0,0.3);*/
-  padding: 4em;
+  padding: 50px;
 }
 .android-img{
   position: absolute;
@@ -134,7 +134,7 @@ a:hover {
   position: fixed; 
   top: 50%;
   left: 100%;
-  transform: translate(-100%,-50%);
+  transform: translate(-150%,-50%);
   padding: 3px;
 }
 
