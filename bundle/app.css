@@ -560,6 +560,7 @@ a:hover {
 }
 #intro-section img {
   z-index: 999;
+  position: relative;
 }
 #intro-section .links a{
   z-index: 999;
